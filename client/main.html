@@ -1,0 +1,21 @@
+<head>
+  <title>simple</title>
+</head>
+
+<body>
+<div class="container">
+  {{> data}}
+  </div>
+</body>
+
+
+
+<template name="data">
+  {{#each data}}
+  <p class="js-data">{{name}}&nbsp;{{age}}</p>&nbsp;<button class="js-del-data">delete</button>&nbsp;<button class="js-update-data">update</button>
+  {{/each}}
+  <br><br>
+  <button class="js-insert-all-data">insert all</button>
+  <button class="js-del-all-data">delete all</button>
+
+</template>
